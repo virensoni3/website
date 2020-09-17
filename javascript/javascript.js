@@ -59,14 +59,14 @@ $('#fadeIn').click(function(){
 });
 
 
-//jquery for the loading animation
-// $(window).on("load",function(){
-//   $(".loader-wrapper").fadeOut(3000);
-// });
+jquery for the loading animation
+$(window).on("load",function(){
+  $(".loader-wrapper").fadeOut(3000);
+});
 
-// $(window).on("load",function(){
-//   $(".loader").fadeOut(1500);
-// });
+$(window).on("load",function(){
+  $(".loader").fadeOut(1500);
+});
 
 
 
