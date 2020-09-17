@@ -59,7 +59,7 @@ $('#fadeIn').click(function(){
 });
 
 
-jquery for the loading animation
+//jquery for the loading animation
 $(window).on("load",function(){
   $(".loader-wrapper").fadeOut(3000);
 });
