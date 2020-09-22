@@ -333,8 +333,8 @@ h4 {
 
 #three {
   background-color: white;
-  height: 425px;
-  padding: 135px 35px 0px 35px;
+  height: 475px;
+  padding: 30px 35px 0px 35px;
 }
 
 #four {
@@ -347,6 +347,40 @@ h4 {
   height: 500px;
   background-color: white;
 }
+
+#my-class2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+
+  #favcar {
+    width: 100px;
+    background: white;    
+  }
+
+  #favcar img {
+    width: 50%;
+    display: block;
+    padding: 0 20px 20px;
+    filter: grayscale(90%);
+    opacity: 0.85;
+    transition: 0.2s ease-in;
+  }
+
+  #favcar img:hover {
+    width: 50%;
+    display: block;
+    padding: 0 20px 20px;
+    filter: grayscale(0%);
+    opacity: 1;
+    cursor: pointer;
+    transform: scale(1.0);
+  }
 
 #five {
   height: 330px;
