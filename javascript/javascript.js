@@ -8,41 +8,8 @@ script.type = 'text/javascript';
 document.getElementsByTagName('head')[0].appendChild(script);
 
 
-function initMap() {
-  let uluru = {
-    lat: 52.629780,
-    lng: -1.139370
-  };
-  let map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: uluru
-  });
-  let marker = new google.maps.Marker({
-    position: uluru,
-    map: map
-  });
-}
 
 
-var x = 0;
-
-// this is the function which translates the text into French
-function translatefunc() {
-  
-
-  
-
-  if (x%2==0) {
-    document.getElementById("translate").innerHTML="English";
-  }
-  else {
-    document.getElementById("translate").innerHTML="Francais";
-  }
-  x++
-
-  //document.getElementById("hello").innerHTML="Hindi";
-  window.location.reload();
-}
 
 
 
@@ -72,23 +39,3 @@ $(window).on("load",function(){
 
 
 
-
-/* Below is the function for the responsive hamburger menu. I have used this example from W3 schools.
-The link is: https://www.w3schools.com/howto/howto_js_topnav_responsive.asp. It has been modified so that there is
-let instead of var */
-(function() {
-	
-	/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
-	function myFunction() {
-	    let x = document.getElementById("myTopnav");
-	    if (x.className === "topnav") {
-	        x.className += " responsive";
-	    } else {
-	        x.className = "topnav";
-	    }
-	}
-
-    // There is an event listener so when a user clicks on the responsive menu, it runs myFunction.
-	document.getElementById('icon').addEventListener('click', myFunction);
-
-})();
