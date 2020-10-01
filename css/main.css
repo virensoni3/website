@@ -56,7 +56,7 @@ h3 {
 h5 {
   font-family: SF Pro Text;
   font-size: 18px;
-  text-align: center;  
+  text-align: center;
 }
 
 /* This styles the text when the user hovers over the images */
@@ -507,36 +507,44 @@ figure:hover figcaption {
   opacity: 0.6;
 }
 
+/* This is the animation car */
 
-
-.footer {
-  width: 100%;
-  position: relative;
-  height: auto;
+#animation {
+  height: 800px;
   background-color: black;
 }
 
+.night {
+  height: 80vh;
+  width: 70vw;
+  
+  margin: 5rem auto;
+  background: url("../images/Img_1.png");
+}
+
+
+#cont1 {
+    width: 200px;
+  }
+
+  #cont2 {
+    width: 400px;
+  }
+
+  #cont3 {
+    width: 200px;
+  }
+
 .social {
- padding-bottom: 20px;
- left: 50%;
+ 
+ width: 300px;
 }
 
-.footer .col ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer h2{
-  font-size: 22px;
-  color: white;
-  padding-top: 20px;
-}
 
 .social ul li {
-  display: inline-block;
+  display: inline-flex;
   padding-right: 5px !important;
-  left: 50%;
+
 }
 
 .social ul li:hover {
@@ -545,6 +553,7 @@ figure:hover figcaption {
 
 .copyright {
   height: 50px;
+  width: auto;
 }
 
 
@@ -590,7 +599,7 @@ figure:hover figcaption {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    height: 800px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 100px;
   }
@@ -651,9 +660,9 @@ figure:hover figcaption {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 250px;
+    width: 650px;
     margin: 0 auto;
-    height: 100px;
+    height: 250px;
   }
 
   #brands { 
@@ -687,8 +696,29 @@ figure:hover figcaption {
     opacity: 0.8;
   }
 
+
+
+  /* animation for car */
+
+
+  #animation {
+  height: 800px;
+  background-color: black;
+}
+
+.night {
+  height: 80vh;
+  width: 70vw;
+  
+  margin: 5rem auto;
+  background: url("../images/Img_1.png");
+}
+
+
+
   #cont1 {
     width: 250px;
+    
   }
 
   #cont2 {
@@ -698,7 +728,7 @@ figure:hover figcaption {
   #cont3 {
     width: 250px;
   }
-}
+
 
 .contain {
   margin-left: 40%;
@@ -760,7 +790,7 @@ figure:hover figcaption {
     justify-content: space-around;
     flex-wrap: wrap;
     padding-right: 40px;
-    height: 800px;
+    height: 300px;
     margin: 0 auto;
     margin-top: 100px;
   }
@@ -771,9 +801,8 @@ figure:hover figcaption {
     justify-content: space-around;
     flex-wrap: wrap;
     width: 975px;
-    height: 10px;
+    height: 200px;
     margin: 0 auto;
-    padding-top: 200px;
   }
 
   h4 {
@@ -791,6 +820,68 @@ figure:hover figcaption {
     font-size: 18px;
     text-decoration: none;
     color: black;
+  }
+}
+
+
+#animation {
+  height: 600px;
+  background-color: black;
+  overflow-y: hidden;
+}
+
+.night {
+  height: 80vh;
+  width: 70vw;
+  margin: 5rem auto;
+  margin-top: 50px;
+  background: url("../images/Img_1.png");
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.surface {
+  height: 140px;
+  width: 500%;
+  background: url("../images/Img_02.png");
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+  
+}
+
+.car {
+  position: absolute;
+  bottom: 40px;
+  left: 90px;
+  
+}
+
+.moveRight {
+  animation: moveRight 6s linear infinite;
+}
+
+.suspension {
+  animation: suspension 1s linear infinite;
+}
+
+@keyframes moveRight {
+  100%{transform: translateX(-2950px)}
+}
+
+
+@keyframes suspension {
+  100% {
+    transform: translateY(-1px);
+  }
+  50% {
+    transform: translateY(1.5px);
+  }
+  0% {
+    transform: translateY(-1px);
   }
 }
 
