@@ -510,18 +510,48 @@ figure:hover figcaption {
 /* This is the animation car */
 
 #animation {
-  height: 800px;
+  height: auto;
   background-color: black;
 }
 
-.night {
-  height: 80vh;
-  width: 70vw;
-  
-  margin: 5rem auto;
-  background: url("../images/Img_1.png");
+
+
+
+.animationDescription p {
+  display: flex;
+  justify-content: center;
+  color: grey;
 }
 
+.night {
+  height: 60vh;
+  width: 50vw;
+  margin: 5rem auto;
+  margin-top: 50px;
+  background: url("../images/Img_1.png");
+  background-size: cover;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.car img{
+  position: absolute;
+  bottom: 50px;
+  left: 90px;
+  width: 90px;
+}
+
+.surface {
+  height: 140px;
+  width: 500%;
+  background: url("../images/Img_02.png");
+  display: block;
+  position: absolute;
+  bottom: 0%;
+  left: 0%;
+  background-repeat: repeat-x;
+  
+}
 
 #cont1 {
     width: 200px;
@@ -656,13 +686,14 @@ figure:hover figcaption {
     padding: 135px 35px 0px 35px;
   }
 
-  #five {
+ #five {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    width: 650px;
+    width: 600px;
+    height: 200px;
     margin: 0 auto;
-    height: 250px;
+    margin-top: 50px;
   }
 
   #brands { 
@@ -701,17 +732,23 @@ figure:hover figcaption {
   /* animation for car */
 
 
-  #animation {
-  height: 800px;
+#animation {
+  height: auto;
   background-color: black;
 }
 
 .night {
   height: 80vh;
   width: 70vw;
-  
   margin: 5rem auto;
   background: url("../images/Img_1.png");
+}
+
+.car img{
+  position: absolute;
+  bottom: 10px;
+  left: 90px;
+  width: 200px;
 }
 
 
@@ -803,6 +840,7 @@ figure:hover figcaption {
     width: 975px;
     height: 200px;
     margin: 0 auto;
+    margin-top: 50px;
   }
 
   h4 {
@@ -825,9 +863,15 @@ figure:hover figcaption {
 
 
 #animation {
-  height: 600px;
+  height: auto;
   background-color: black;
   overflow-y: hidden;
+}
+
+.animationDescription p {
+  display: flex;
+  justify-content: center;
+  color: grey;
 }
 
 .night {
@@ -857,7 +901,7 @@ figure:hover figcaption {
   position: absolute;
   bottom: 40px;
   left: 90px;
-  
+  width: 200px;
 }
 
 .moveRight {
